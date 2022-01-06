@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="./script.js"></script>
+</head>
+<body>
+    <h1>Calculator</h1>
+    <div class="container">
+      <div class="header">Calculator</div>
+      <input type="text" id="res" class="result">
+      <div class="first-row">
+        <input type="button" name="" value="Del" onclick="backSpace()" class="global">
+        <input type="button" name="" value="("  onclick="displayNum('(')" class="global">
+        <input type="button" name="" value=")"  onclick="displayNum(')')" class="global">
+        <input type="button" name="" value="%"  onclick="displayNum('%')" class="global">
+      </div>
+      <div class="second-row">
+        <input type="button" name="" value="7"  onclick="displayNum('7')" class="global">
+        <input type="button" name="" value="8"  onclick="displayNum('8')" class="global">
+        <input type="button" name="" value="9"  onclick="displayNum('9')" class="global">
+        <input type="button" name="" value="/"  onclick="displayNum('/')" class="global">
+      </div>
+      <div class="third-row">
+        <input type="button" name="" value="4"  onclick="displayNum('4')" class="global">
+        <input type="button" name="" value="5"  onclick="displayNum('5')" class="global">
+        <input type="button" name="" value="6"  onclick="displayNum('6')" class="global">
+        <input type="button" name="" value="X"  onclick="displayNum('*')" class="global">
+      </div>
+      <div class="fourth-row">
+        <input type="button" name="" value="1"  onclick="displayNum('1')" class="global">
+        <input type="button" name="" value="2"  onclick="displayNum('2')" class="global">
+        <input type="button" name="" value="3"  onclick="displayNum('3')" class="global">
+        <input type="button" name="" value="-"  onclick="displayNum('-')" class="global">
+      </div>
+      <div class="conflict">
+        <div class="left">
+          <input type="button" name="" value="0"  onclick="displayNum('0')" class=" big">
+          <input type="button" name="" value="."  onclick="displayNum('.')" class=" small">
+          <input type="button" name="" value="C"  onclick="clearBox()" class=" red small white-text top-margin">
+          <input type="button" name="" value="="  onclick="evaluateExpression()" class=" green white-text big top-margin">
+        </div>
+        <div class="right">
+          <input type="button" name="" value="+"  onclick="displayNum('+')" class="global grey plus">
+        </div>
+      </div>
+    </div>
+</body>
+</html>
